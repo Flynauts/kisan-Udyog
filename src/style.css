@@ -254,7 +254,7 @@ header {
   flex-direction: column;
 }
 .OurRange {
-  max-width: 1400px;
+  max-width: 1440px;
 }
 .OurRange h4#title {
   text-align: center;
@@ -595,7 +595,7 @@ header {
   }
   .a-h3 {
     font-size: 32px;
-    /* margin: 1%; */
+    margin: 1%;
   }
   .m-p,
   .v-p {
@@ -612,6 +612,7 @@ header {
     padding: 1.2rem;
     gap: 1.5rem;
   }
+
   .m-container {
     display: flex;
     flex-direction: column;
@@ -647,7 +648,7 @@ header {
     margin-bottom: 1%;
   }
   .a-h3 {
-    font-size: 24px;
+    font-size: 20px;
     color: #1c6d4b;
     font-weight: 600;
     display: flex;
@@ -656,6 +657,8 @@ header {
     padding-right: 24px;
     margin-block-start: 25px;
     margin-block-end: 25px;
+    margin-bottom: 2%;
+    margin-top: 5%;
   }
   .m-p,
   .v-p {
@@ -663,7 +666,7 @@ header {
     padding-left: 24px;
     padding-right: 24px;
     font-family: "Mulish,sans-serif";
-    line-height: 1.3rem;
+    line-height: 1.3;
     margin-bottom: 0%;
   }
   .mission-content-area {
@@ -1228,7 +1231,7 @@ header .header-icons i {
   .mission-card-container,
   .vision-card-container {
     max-width: 743px;
-    height: 260px;
+    height: -webkit-fill-available;
   }
   .about-us-card::before {
     height: -webkit-fill-available;
@@ -1343,7 +1346,7 @@ header .header-icons i {
     height: 175px;
   }
 
-  /* mahesh media query start (834px to 440 px end */
+  /* mahesh media query end (834px to 440 px end */
 
   .product-price,
   .product-title {
@@ -1356,11 +1359,11 @@ header .header-icons i {
     height: 248px;
   }
   .about-us-card::before {
-    height: -webkit-fill-avaiable;
+    height: -webkit-fill-available;
   }
   .about-us-card {
     width: 390px;
-    height: -webkit-fill-avaiable;
+    height: -webkit-fill-available;
   }
   h1,
   h2 {
@@ -1420,8 +1423,8 @@ header .header-icons i {
   }
   .about-us-content-area li {
     font-family: "Mulish", sans-serif;
-    font-size: 16px;
-    line-height: 1.1;
+    font-size: 20px;
+    line-height: 1.3;
     color: black;
     margin-bottom: 10px;
   }
@@ -1631,6 +1634,76 @@ header .header-icons i {
   .footer-lowerrow {
     display: none;
   }
+}
+
+@media screen and (min-width: 0px) and (max-width: 440px) {
+  .products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+  }
+  .products .product .product-name {
+    font-size: 22px;
+    /* line-height: 24px; */
+    font-weight: 400;
+  }
+}
+@media (min-width: 440px) and (max-width: 500px) {
+  /* .products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  
+  } */
+
+  /* .main{
+    display: block;
+  } */
+  .products {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    padding: 5px 5px;
+    /* width: 834px; */
+  }
+  /* .products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 393px;
+  } */
+  .products .product .img {
+    width: 100px;
+    height: 103px;
+  }
+  .products .product .product-name {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .products .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 125px;
+    height: 175px;
+  }
+}
+
+@media (max-width: 500px) {
+  .cards {
+    flex-wrap: wrap;
+  }
+
+  /* .products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+  
+  } */
 }
 
 /* Responsive: iPad */
